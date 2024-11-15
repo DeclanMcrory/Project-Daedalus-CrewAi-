@@ -1,0 +1,16 @@
+{
+  "name": "project-daedalus",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "vitest": "^1.0.0"
+  }
+}
