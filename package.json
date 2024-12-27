@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "start": "node src/main.js",
-    "test": "vitest"
+    "test": "vitest",
+    "run-dashboard": "node src/dashboard.js"
   },
   "dependencies": {
     "dotenv": "^16.3.1",

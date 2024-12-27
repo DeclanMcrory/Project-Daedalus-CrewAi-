@@ -54,8 +54,8 @@ To start the 3D GUI dashboard, ensure that you have Node.js and npm installed. T
 # Navigate to the project directory
 cd project-daedalus
 
-# Start the dashboard server
-node src/dashboard/server.js
+# Start the dashboard server using the run script
+npm run run-dashboard
 ```
 
 Once the server is running, open your web browser and go to `http://localhost:3000` to view the 3D GUI dashboard.
