@@ -1,0 +1,79 @@
+/* CSS Variables for Dark Theme */
+:root {
+    --background-color: #121212;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #b0b0b0;
+    --accent-color: #bb86fc;
+    --chat-background-color: #1e1e1e;
+    --chat-border-color: #333333;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    overflow: hidden;
+}
+
+#dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+#3d-canvas {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #000000;
+}
+
+/* Chat Interface Styles */
+#chat-interface {
+    background-color: var(--chat-background-color);
+    border-top: 1px solid var(--chat-border-color);
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 30vh;
+}
+
+#chat-interface input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+}
+
+#chat-interface button {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    color: var(--primary-text-color);
+    cursor: pointer;
+}
+
+#chat-interface button:hover {
+    background-color: #9a67ea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #dashboard-container {
+        flex-direction: column;
+    }
+
+    #chat-interface {
+        max-height: 40vh;
+    }
+}

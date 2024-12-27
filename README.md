@@ -46,6 +46,21 @@ npm start
 npm test
 ```
 
+### Starting the 3D GUI Dashboard
+
+To start the 3D GUI dashboard, ensure that you have Node.js and npm installed. Then, follow these steps:
+
+```bash
+# Navigate to the project directory
+cd project-daedalus
+
+# Start the dashboard server
+node src/dashboard/server.js
+```
+
+Once the server is running, open your web browser and go to `http://localhost:3000` to view the 3D GUI dashboard.
+```
+
 ## 🏗️ Architecture
 
 ```
