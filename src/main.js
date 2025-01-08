@@ -3,6 +3,8 @@ import { DaedalusCrew } from './crew/index.js';
 async function main() {
   try {
     const daedalus = new DaedalusCrew();
+    console.log("Initializing all agents in DaedalusCrew...");
+    await daedalus.initialize();
     console.log("Launching Project Daedalus...");
     const results = await daedalus.launch();
     console.log("System running successfully");

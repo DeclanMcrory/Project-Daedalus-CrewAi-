@@ -10,7 +10,8 @@ export class Crew {
     const results = [];
 
     for (const task of this.tasks) {
-      const result = await task.agent.executeTask(task);
+      const agent = this.agents.find(a => a.role === task.agent.role);
+      const result = await agent.executeTask(task);
       results.push(result);
     }
 

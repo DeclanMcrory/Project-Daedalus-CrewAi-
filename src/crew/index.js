@@ -3,6 +3,11 @@ import { DaedalusCoordinator } from '../agents/coordinator.js';
 import { ResearcherAgent } from '../agents/researcher.js';
 import { InnovatorAgent } from '../agents/innovator.js';
 import { GuardianAgent } from '../agents/guardian.js';
+import { CreativeAgent } from '../agents/creative.js';
+import { SocialAgent } from '../agents/social.js';
+import { DataAgent } from '../agents/data.js';
+import { PlanningAgent } from '../agents/planning.js';
+import { KnowledgeManagerAgent } from '../agents/knowledge_manager.js';
 
 export class DaedalusCrew {
   constructor() {
@@ -10,7 +15,12 @@ export class DaedalusCrew {
     this.agents = {
       researcher: new ResearcherAgent({}),
       innovator: new InnovatorAgent({}),
-      guardian: new GuardianAgent({})
+      guardian: new GuardianAgent({}),
+      creative: new CreativeAgent({}),
+      social: new SocialAgent({}),
+      data: new DataAgent({}),
+      planning: new PlanningAgent({}),
+      knowledgeManager: new KnowledgeManagerAgent({})
     };
   }
 
