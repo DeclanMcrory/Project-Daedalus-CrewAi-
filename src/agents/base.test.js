@@ -1,7 +1,9 @@
-import { Base } from '../src/agents/base';
-import { expect, test } from 'vitest';
+import { describe, it, expect } from 'vitest';
+import Base from './base.js';
 
-test('Base agent has a name', () => {
-  const agent = new Base({ name: 'TestAgent' });
-  expect(agent.name).toBe('TestAgent');
+describe('Base Agent', () => {
+  it('should have a name', () => {
+    const agent = new Base({ name: 'TestAgent' });
+    expect(agent.name).toBe('TestAgent');
+  });
 });
